@@ -255,4 +255,6 @@ Wire Notes Line
 	1400 1400 700  1400
 Wire Notes Line
 	700  1400 700  800 
+Text Notes 1100 3350 0    60   ~ 0
+TODO:\n * Add Battery section\n * Add ICSP section\n * Add button/tilt section?\n * Add LEDs\n
 $EndSCHEMATC
