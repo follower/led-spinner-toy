@@ -1,6 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:w_microcontrollers
 LIBS:power
+LIBS:w_device
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
