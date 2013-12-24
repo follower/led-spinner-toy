@@ -58,3 +58,4 @@ RptLab=1
 LabSize=60
 [eeschema/libraries]
 LibName1=parts/lib_w_microcontrollers/w_microcontrollers
+LibName2=parts/kicad/power
