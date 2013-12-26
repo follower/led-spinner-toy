@@ -3,6 +3,7 @@ LIBS:w_microcontrollers
 LIBS:power
 LIBS:w_device
 LIBS:atmel
+LIBS:battery-cr2032
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268

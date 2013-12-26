@@ -61,3 +61,4 @@ LibName1=parts/lib_w_microcontrollers/w_microcontrollers
 LibName2=parts/kicad/power
 LibName3=parts/lib_w_device/w_device
 LibName4=parts/kicad/atmel
+LibName5=parts/rancidbacon/battery-cr2032
