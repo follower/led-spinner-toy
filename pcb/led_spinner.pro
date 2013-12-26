@@ -62,3 +62,4 @@ LibName2=parts/kicad/power
 LibName3=parts/lib_w_device/w_device
 LibName4=parts/kicad/atmel
 LibName5=parts/rancidbacon/battery-cr2032
+LibName6=parts/lib_w_connectors/w_connectors
