@@ -258,7 +258,7 @@ Wire Notes Line
 Wire Notes Line
 	700  1400 700  800 
 Text Notes 1100 3350 0    60   ~ 0
-TODO:\n * Add Battery section\n * Add button/tilt section?\n * Add LEDs\n
+TODO:\n * Add button/tilt section?\n * Add LEDs
 $Comp
 L AVR-ISP-6 CON1
 U 1 1 52BBBEF7
@@ -336,4 +336,54 @@ Wire Notes Line
 	3100 1400 1500 1400
 Wire Notes Line
 	1500 1400 1500 800 
+$Comp
+L BATTERY_CR2032 BT1
+U 1 1 52BC56D5
+P 1300 1850
+F 0 "BT1" H 1300 2050 50  0000 C CNN
+F 1 "BATTERY_CR2032" H 1300 1660 50  0000 C CNN
+F 2 "" H 1300 1850 60  0000 C CNN
+F 3 "" H 1300 1850 60  0000 C CNN
+	1    1300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 52BC56E9
+P 1800 2000
+F 0 "#PWR014" H 1800 2000 30  0001 C CNN
+F 1 "GND" H 1800 1930 30  0001 C CNN
+F 2 "" H 1800 2000 60  0000 C CNN
+F 3 "" H 1800 2000 60  0000 C CNN
+	1    1800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR015
+U 1 1 52BC56FD
+P 800 1750
+F 0 "#PWR015" H 800 1700 20  0001 C CNN
+F 1 "+BATT" H 800 1850 30  0000 C CNN
+F 2 "" H 800 1750 60  0000 C CNN
+F 3 "" H 800 1750 60  0000 C CNN
+	1    800  1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1850 1800 1850
+Wire Wire Line
+	1800 1850 1800 2000
+Wire Wire Line
+	1000 1950 800  1950
+Wire Wire Line
+	800  1950 800  1750
+NoConn ~ 1000 1850
+Wire Notes Line
+	1900 1550 1900 2150
+Wire Notes Line
+	1900 1550 700  1550
+Wire Notes Line
+	700  1550 700  2150
+Wire Notes Line
+	700  2150 1900 2150
 $EndSCHEMATC
