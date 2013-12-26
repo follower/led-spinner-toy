@@ -63,3 +63,4 @@ LibName3=parts/lib_w_device/w_device
 LibName4=parts/kicad/atmel
 LibName5=parts/rancidbacon/battery-cr2032
 LibName6=parts/lib_w_connectors/w_connectors
+LibName7=parts/lib_w_device/sw_push_alternate_pinout_via_w_device_lib

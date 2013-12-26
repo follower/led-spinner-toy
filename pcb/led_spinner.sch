@@ -5,6 +5,7 @@ LIBS:w_device
 LIBS:atmel
 LIBS:battery-cr2032
 LIBS:w_connectors
+LIBS:sw_push_alternate_pinout_via_w_device_lib
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
