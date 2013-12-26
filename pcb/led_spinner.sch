@@ -200,7 +200,7 @@ $EndComp
 Text Label 1000 1300 0    60   ~ 0
 ~RESET
 Text Notes 1100 3350 0    60   ~ 0
-TODO:\n * Add button/tilt section?
+TODO:\n * Add button section?
 $Comp
 L AVR-ISP-6 CON1
 U 1 1 52BBBEF7
@@ -1198,4 +1198,32 @@ Wire Wire Line
 	3500 3800 3700 3800
 Wire Wire Line
 	3700 3800 3700 3850
+$Comp
+L HEADER_2 J3
+U 1 1 52BC8F15
+P 7350 3500
+F 0 "J3" H 7350 3650 60  0000 C CNN
+F 1 "TILT" H 7350 3350 60  0000 C CNN
+F 2 "" H 7350 3500 60  0000 C CNN
+F 3 "" H 7350 3500 60  0000 C CNN
+	1    7350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3450 7250 3450
+$Comp
+L GND #PWR034
+U 1 1 52BC8FB4
+P 7050 3600
+F 0 "#PWR034" H 7050 3600 30  0001 C CNN
+F 1 "GND" H 7050 3530 30  0001 C CNN
+F 2 "" H 7050 3600 60  0000 C CNN
+F 3 "" H 7050 3600 60  0000 C CNN
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3550 7050 3550
+Wire Wire Line
+	7050 3550 7050 3600
 $EndSCHEMATC
