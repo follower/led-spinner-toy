@@ -1118,4 +1118,5 @@ Wire Wire Line
 	4300 3800 3950 3800
 Text Label 3950 3800 0    60   ~ 0
 BNW
+NoConn ~ 4300 4400
 $EndSCHEMATC
