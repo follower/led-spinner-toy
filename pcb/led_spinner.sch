@@ -257,5 +257,82 @@ Wire Notes Line
 Wire Notes Line
 	700  1400 700  800 
 Text Notes 1100 3350 0    60   ~ 0
-TODO:\n * Add Battery section\n * Add ICSP section\n * Add button/tilt section?\n * Add LEDs\n
+TODO:\n * Add Battery section\n * Add button/tilt section?\n * Add LEDs\n
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 52BBBEF7
+P 2225 1100
+F 0 "CON1" H 2145 1340 50  0000 C CNN
+F 1 "AVR-ISP-6" H 1985 870 50  0000 L BNN
+F 2 "AVR-ISP-6" V 1705 1140 50  0001 C CNN
+F 3 "" H 2225 1100 60  0000 C CNN
+	1    2225 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1200 2900 1250
+$Comp
+L +BATT #PWR012
+U 1 1 52BBC065
+P 2900 950
+F 0 "#PWR012" H 2900 900 20  0001 C CNN
+F 1 "+BATT" H 2900 1050 30  0000 C CNN
+F 2 "" H 2900 950 60  0000 C CNN
+F 3 "" H 2900 950 60  0000 C CNN
+	1    2900 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 52BBC07C
+P 2900 1250
+F 0 "#PWR013" H 2900 1250 30  0001 C CNN
+F 1 "GND" H 2900 1180 30  0001 C CNN
+F 2 "" H 2900 1250 60  0000 C CNN
+F 3 "" H 2900 1250 60  0000 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1000 2900 950 
+Wire Wire Line
+	2350 1000 2900 1000
+Wire Wire Line
+	2350 1200 2900 1200
+Wire Wire Line
+	2350 1100 2900 1100
+Wire Wire Line
+	1650 1000 2100 1000
+Wire Wire Line
+	2100 1100 1650 1100
+Wire Wire Line
+	2100 1200 1650 1200
+Text Label 2900 1100 2    60   ~ 0
+MOSI
+Wire Wire Line
+	3950 3400 4300 3400
+Text Label 3950 3400 0    60   ~ 0
+MOSI
+Text Label 1650 1000 0    60   ~ 0
+MISO
+Text Label 1650 1100 0    60   ~ 0
+SCK
+Text Label 1650 1200 0    60   ~ 0
+~RESET
+Wire Wire Line
+	4300 3500 3950 3500
+Wire Wire Line
+	4300 3600 3950 3600
+Text Label 3950 3500 0    60   ~ 0
+MISO
+Text Label 3950 3600 0    60   ~ 0
+SCK
+Wire Notes Line
+	1500 800  3100 800 
+Wire Notes Line
+	3100 800  3100 1400
+Wire Notes Line
+	3100 1400 1500 1400
+Wire Notes Line
+	1500 1400 1500 800 
 $EndSCHEMATC
