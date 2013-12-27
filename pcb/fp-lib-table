@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name battery-cr2032-retainer-keystone-3003)(type Legacy)(uri ${KIPRJMOD}/parts/rancidbacon/battery-cr2032-retainer-keystone-3003.mod)(options "")(descr ""))
+  (lib (name OMRON-PUSH-BUTTON-B3SN-3112P)(type Legacy)(uri ${KIPRJMOD}/parts/rancidbacon/OMRON-PUSH-BUTTON-B3SN-3112P.mod)(options "")(descr ""))
+  (lib (name w_pin_strip)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_pin_strip/w_pin_strip.mod)(options "")(descr ""))
+  (lib (name w_smd_resistors)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_smd_resistors/w_smd_resistors.mod)(options "")(descr ""))
+  (lib (name w_smd_cap)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_smd_cap/w_smd_cap.mod)(options "")(descr ""))
+  (lib (name w_smd_leds)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_smd_leds/w_smd_leds.mod)(options "")(descr ""))
+  (lib (name w_smd_lqfp)(type Legacy)(uri ${KIPRJMOD}/parts/smisioto/mod_smd_lqfp/w_smd_lqfp.mod)(options "")(descr ""))
+)
