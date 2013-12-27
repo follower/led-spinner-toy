@@ -4,8 +4,6 @@ last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
 [pcbnew]
 version=1
 LastNetListRead=
