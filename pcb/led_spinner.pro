@@ -24,6 +24,13 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
+LibName1=parts/rancidbacon/battery-cr2032-retainer-keystone-3003
+LibName2=parts/rancidbacon/OMRON-PUSH-BUTTON-B3SN-3112P
+LibName3=parts/smisioto/mod_pin_strip/w_pin_strip
+LibName4=parts/smisioto/mod_smd_cap/w_smd_cap
+LibName5=parts/smisioto/mod_smd_leds/w_smd_leds
+LibName6=parts/smisioto/mod_smd_lqfp/w_smd_lqfp
+LibName7=parts/smisioto/mod_smd_resistors/w_smd_resistors
 LibDir=
 [general]
 version=1
