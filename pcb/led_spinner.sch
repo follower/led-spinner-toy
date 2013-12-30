@@ -1234,7 +1234,7 @@ F 1 "SW_PUSH_ALT" H 3200 1770 50  0000 C CNN
 F 2 "" H 3200 1850 60  0000 C CNN
 F 3 "" H 3200 1850 60  0000 C CNN
 	1    3200 1850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L GND #PWR035

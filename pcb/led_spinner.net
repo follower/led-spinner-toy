@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/philip/Projects/led_spinner/pcb/led_spinner.sch)
-    (date "Friday, 27 December 2013 10:59:57 pm")
+    (date "Tuesday, 31 December 2013 12:44:30 am")
     (tool "eeschema (2013-jul-14)-product"))
   (components
     (comp (ref U1)
@@ -221,22 +221,6 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 52BC9484)))
   (libparts
-    (libpart (lib battery-cr2032) (part BATTERY_CR2032)
-      (fields
-        (field (name Reference) BT)
-        (field (name Value) BATTERY_CR2032))
-      (pins
-        (pin (num 0) (name +) (type passive))
-        (pin (num 1) (name +) (type passive))
-        (pin (num 2) (name -) (type passive))))
-    (libpart (lib w_connectors) (part HEADER_3)
-      (fields
-        (field (name Reference) J)
-        (field (name Value) HEADER_3))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))
-        (pin (num 3) (name ~) (type passive))))
     (libpart (lib w_microcontrollers) (part ATMEGA48_88_168_328P-32SMD)
       (description "8-Bit AVR Microcontroller with 4/8/16/32KB In-System Programmable Flash")
       (docs /home/walter/Documents/Elettronica/DATA_SHEET/Elettronici/Integrati/Digitali/microcontrollori/Microchip/MCIP_PIC16F87xA.pdf)
@@ -288,13 +272,14 @@
         (pin (num 4) (name ~) (type passive))
         (pin (num 5) (name ~) (type passive))
         (pin (num 6) (name ~) (type passive))))
-    (libpart (lib sw_push_alternate_pinout_via_w_device_lib) (part SW_PUSH_ALT)
+    (libpart (lib battery-cr2032) (part BATTERY_CR2032)
       (fields
-        (field (name Reference) SW)
-        (field (name Value) SW_PUSH_ALT))
+        (field (name Reference) BT)
+        (field (name Value) BATTERY_CR2032))
       (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 3) (name 3) (type passive))))
+        (pin (num 0) (name +) (type passive))
+        (pin (num 1) (name +) (type passive))
+        (pin (num 2) (name -) (type passive))))
     (libpart (lib w_connectors) (part HEADER_2)
       (fields
         (field (name Reference) J)
@@ -302,6 +287,14 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib w_connectors) (part HEADER_3)
+      (fields
+        (field (name Reference) J)
+        (field (name Value) HEADER_3))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))
+        (pin (num 3) (name ~) (type passive))))
     (libpart (lib w_device) (part C)
       (aliases
         (alias cap_np))
@@ -327,20 +320,27 @@
         (field (name Value) R))
       (pins
         (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive)))))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib sw_push_alternate_pinout_via_w_device_lib) (part SW_PUSH_ALT)
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH_ALT))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 3) (name 3) (type passive)))))
   (libraries
     (library (logical atmel)
       (uri parts/kicad/atmel.lib))
+    (library (logical w_microcontrollers)
+      (uri parts/lib_w_microcontrollers/w_microcontrollers.lib))
+    (library (logical battery-cr2032)
+      (uri parts/rancidbacon/battery-cr2032.lib))
     (library (logical w_connectors)
       (uri parts/lib_w_connectors/w_connectors.lib))
     (library (logical w_device)
       (uri parts/lib_w_device/w_device.lib))
-    (library (logical w_microcontrollers)
-      (uri parts/lib_w_microcontrollers/w_microcontrollers.lib))
     (library (logical sw_push_alternate_pinout_via_w_device_lib)
-      (uri parts/lib_w_device/sw_push_alternate_pinout_via_w_device_lib.lib))
-    (library (logical battery-cr2032)
-      (uri parts/rancidbacon/battery-cr2032.lib)))
+      (uri parts/lib_w_device/sw_push_alternate_pinout_via_w_device_lib.lib)))
   (nets
     (net (code 1) (name /BNE)
       (node (ref R14) (pin 2))
@@ -359,7 +359,7 @@
       (node (ref CON1) (pin 6))
       (node (ref U1) (pin 21))
       (node (ref J1) (pin 3))
-      (node (ref SW1) (pin 1))
+      (node (ref SW1) (pin 3))
       (node (ref J3) (pin 2))
       (node (ref J2) (pin 2))
       (node (ref LD6) (pin 2))
@@ -381,8 +381,8 @@
       (node (ref LD4) (pin 2))
       (node (ref LD2) (pin 2)))
     (net (code 5) (name "Net-(LD2-Pad1)")
-      (node (ref R3) (pin 1))
-      (node (ref LD2) (pin 1)))
+      (node (ref LD2) (pin 1))
+      (node (ref R3) (pin 1)))
     (net (code 6) (name /BE)
       (node (ref U1) (pin 26))
       (node (ref R17) (pin 2)))
@@ -390,8 +390,8 @@
       (node (ref R17) (pin 1))
       (node (ref LD16) (pin 1)))
     (net (code 8) (name "Net-(LD5-Pad1)")
-      (node (ref LD5) (pin 1))
-      (node (ref R6) (pin 1)))
+      (node (ref R6) (pin 1))
+      (node (ref LD5) (pin 1)))
     (net (code 9) (name /BSE)
       (node (ref R15) (pin 2))
       (node (ref U1) (pin 27)))
@@ -450,7 +450,7 @@
       (node (ref U1) (pin 8)))
     (net (code 28) (name /BUTTON)
       (node (ref U1) (pin 1))
-      (node (ref SW1) (pin 3)))
+      (node (ref SW1) (pin 1)))
     (net (code 29) (name "Net-(J3-Pad1)")
       (node (ref J3) (pin 1))
       (node (ref U1) (pin 32)))
