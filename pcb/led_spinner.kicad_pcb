@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 153.67 75.565 231.140001 145.415001)
     (thickness 1.6)
-    (drawings 10)
+    (drawings 11)
     (tracks 461)
     (zones 0)
     (modules 43)
@@ -1515,6 +1515,9 @@
     )
   )
 
+  (gr_text "rancidbacon.com/p/spin\n20140105A" (at 205.74 96.52 315) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.25)))
+  )
   (gr_text GND (at 180.34 106.68) (layer F.SilkS)
     (effects (font (size 0.3 0.3) (thickness 0.075)))
   )
